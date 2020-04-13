@@ -4,3 +4,5 @@
 - celery
 - flower
 - supervisor
+
+#### add schedule task every 10 secs
