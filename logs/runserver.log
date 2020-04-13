@@ -6,3 +6,30 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 [13/Apr/2020 18:05:35] "GET /index/ HTTP/1.1" 200 18
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /index/
+[13/Apr/2020 22:20:21] "GET /index/ HTTP/1.1" 400 71388
+/home/wx/myprojects/django_celery_demo/dj_celery_demo/settings.py changed, reloading.
+Performing system checks...
+
+['/home/wx/myprojects/django_celery_demo', '/home/wx/pyenvs/dj_celery/lib/python36.zip', '/home/wx/pyenvs/dj_celery/lib/python3.6', '/home/wx/pyenvs/dj_celery/lib/python3.6/lib-dynload', '/usr/lib/python3.6', '/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages']
+System check identified no issues (0 silenced).
+April 13, 2020 - 22:19:48
+Django version 3.0.5, using settings 'dj_celery_demo.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[13/Apr/2020 22:21:01] "GET /index/ HTTP/1.1" 200 18
+Not Found: /dp
+[13/Apr/2020 22:21:04] "GET /dp HTTP/1.1" 404 2162
+Not Found: /doi
+[13/Apr/2020 22:21:09] "GET /doi HTTP/1.1" 404 2165
+Not Found: /d
+[13/Apr/2020 22:21:13] "GET /d HTTP/1.1" 404 2159
+[13/Apr/2020 22:21:15] "GET /do HTTP/1.1" 301 0
+[13/Apr/2020 22:21:15] "GET /do/ HTTP/1.1" 200 55
