@@ -10,8 +10,8 @@ import djcelery
 djcelery.setup_loader()
 
 BROKER_BACKEND = 'redis'
-BROKER_URL = 'redis://192.168.180.133:6379/1'
-CELERY_RESULT_BACKEND = 'redis://192.168.180.133:6379/2'
+BROKER_URL = 'redis://127.0.0.1:6379/1'
+CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/2'
 
 # 配置任务
 CELERY_IMPORTS = {
