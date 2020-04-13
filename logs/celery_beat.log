@@ -1,0 +1,15 @@
+Stale pidfile exists. Removing it.
+[2020-04-13 18:05:15,651: INFO/MainProcess] beat: Starting...
+[2020-04-13 18:05:15,689: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:05:25,707: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:05:35,710: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:05:45,734: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:05:55,736: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:06:05,738: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:06:15,738: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:06:25,738: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:06:35,741: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:06:45,756: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:06:55,779: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:07:05,794: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-13 18:07:15,794: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)

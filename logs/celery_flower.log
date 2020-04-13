@@ -1,0 +1,18 @@
+[I 200413 18:05:15 command:136] Visit me at http://localhost:5555
+[I 200413 18:05:15 command:141] Broker: redis://192.168.180.133:6379/1
+[I 200413 18:05:15 command:144] Registered tasks: 
+    ['celery.backend_cleanup',
+     'celery.chain',
+     'celery.chord',
+     'celery.chord_unlock',
+     'celery.chunks',
+     'celery.group',
+     'celery.map',
+     'celery.starmap',
+     'dj_celery_demo']
+[I 200413 18:05:15 mixins:231] Connected to redis://192.168.180.133:6379/1
+/root/myenvs/my_dj_celery/lib/python3.6/site-packages/celery/app/control.py:36: DuplicateNodenameWarning: Received multiple replies from node name: celery@master-jenkins.
+Please make sure you give each node a unique nodename using the `-n` option.
+  pluralize(len(dupes), 'name'), ', '.join(sorted(dupes)),
+[W 200413 18:05:44 control:44] 'stats' inspect method failed
+[W 200413 18:05:44 control:44] 'registered' inspect method failed
