@@ -1,38 +1,409 @@
+Not Found: /4/
+[14/Apr/2020 16:25:02] "GET /4/ HTTP/1.1" 404 1721
+[14/Apr/2020 16:25:09] "GET /1/ HTTP/1.1" 200 16
+[14/Apr/2020 16:44:09] "GET /1/ HTTP/1.1" 200 16
+Not Found: /2/
+[14/Apr/2020 16:44:13] "GET /2/ HTTP/1.1" 404 1721
+[14/Apr/2020 16:44:16] "GET /1/ HTTP/1.1" 200 16
+[14/Apr/2020 16:45:06] "GET /admin/ HTTP/1.1" 200 6715
+[14/Apr/2020 16:45:06] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[14/Apr/2020 16:45:06] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[14/Apr/2020 16:45:07] "GET /1/ HTTP/1.1" 200 16
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'detail' with arguments '('',)' not found. 1 pattern(s) tried: ['(?P<question_id>[0-9]+)\\/$']
+[14/Apr/2020 16:45:56] "GET / HTTP/1.1" 500 144637
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'detail' with arguments '('',)' not found. 1 pattern(s) tried: ['(?P<question_id>[0-9]+)\\/$']
+[14/Apr/2020 16:46:00] "GET / HTTP/1.1" 500 144644
+/home/wx/projects/django_celery_demo/dj_celery_demo/urls.py changed, reloading.
 Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-[13/Apr/2020 18:05:35] "GET /index/ HTTP/1.1" 200 18
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
-Bad Request: /index/
-[13/Apr/2020 22:20:21] "GET /index/ HTTP/1.1" 400 71388
-/home/wx/myprojects/django_celery_demo/dj_celery_demo/settings.py changed, reloading.
-Performing system checks...
-
-['/home/wx/myprojects/django_celery_demo', '/home/wx/pyenvs/dj_celery/lib/python36.zip', '/home/wx/pyenvs/dj_celery/lib/python3.6', '/home/wx/pyenvs/dj_celery/lib/python3.6/lib-dynload', '/usr/lib/python3.6', '/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages']
-System check identified no issues (0 silenced).
-April 13, 2020 - 22:19:48
-Django version 3.0.5, using settings 'dj_celery_demo.settings'
-Starting development server at http://0.0.0.0:8000/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[13/Apr/2020 22:21:01] "GET /index/ HTTP/1.1" 200 18
-Not Found: /dp
-[13/Apr/2020 22:21:04] "GET /dp HTTP/1.1" 404 2162
-Not Found: /doi
-[13/Apr/2020 22:21:09] "GET /doi HTTP/1.1" 404 2165
-Not Found: /d
-[13/Apr/2020 22:21:13] "GET /d HTTP/1.1" 404 2159
-[13/Apr/2020 22:21:15] "GET /do HTTP/1.1" 301 0
-[13/Apr/2020 22:21:15] "GET /do/ HTTP/1.1" 200 55
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '('',)' not found. 1 pattern(s) tried: ['$']
+[14/Apr/2020 16:49:47] "GET / HTTP/1.1" 500 143069
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '('',)' not found. 1 pattern(s) tried: ['$']
+[14/Apr/2020 16:49:48] "GET / HTTP/1.1" 500 143069
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '('',)' not found. 1 pattern(s) tried: ['$']
+[14/Apr/2020 16:49:49] "GET / HTTP/1.1" 500 143069
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '('',)' not found. 1 pattern(s) tried: ['$']
+[14/Apr/2020 16:49:51] "GET / HTTP/1.1" 500 143069
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '('',)' not found. 1 pattern(s) tried: ['$']
+[14/Apr/2020 16:50:03] "GET / HTTP/1.1" 500 143069
+[14/Apr/2020 16:50:16] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:17] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:17] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:18] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:18] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:19] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:19] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:19] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:19] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:19] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:19] "GET / HTTP/1.1" 200 280
+[14/Apr/2020 16:50:20] "GET / HTTP/1.1" 200 280
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wx/projects/django_celery_demo/celery_demo/views.py", line 25, in index
+    return render(request, 'index.html', context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '(1,)' not found. 1 pattern(s) tried: ['$']
+[14/Apr/2020 16:50:59] "GET / HTTP/1.1" 500 143083
+[14/Apr/2020 17:00:12] "GET / HTTP/1.1" 200 232
+[14/Apr/2020 17:00:12] "GET / HTTP/1.1" 200 232
+[14/Apr/2020 17:00:13] "GET /1/ HTTP/1.1" 200 16
+[14/Apr/2020 17:19:23] "GET / HTTP/1.1" 200 232
+[14/Apr/2020 17:19:25] "GET /1/ HTTP/1.1" 200 563
+[14/Apr/2020 17:19:39] "GET /1/ HTTP/1.1" 200 563
+[14/Apr/2020 17:19:41] "POST /1/vote/ HTTP/1.1" 200 28
+[14/Apr/2020 17:19:44] "POST /1/vote/ HTTP/1.1" 200 28
+[14/Apr/2020 17:19:47] "POST /1/vote/ HTTP/1.1" 200 28
+[14/Apr/2020 17:24:08] "GET / HTTP/1.1" 200 291
+[14/Apr/2020 17:24:10] "GET /1/ HTTP/1.1" 200 563
+[14/Apr/2020 17:24:11] "POST /1/vote/ HTTP/1.1" 200 28
+[14/Apr/2020 17:24:14] "GET /1/ HTTP/1.1" 200 563
+[14/Apr/2020 17:24:15] "POST /1/vote/ HTTP/1.1" 200 28
+[14/Apr/2020 17:24:19] "GET / HTTP/1.1" 200 291
+[14/Apr/2020 17:24:40] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:24:41] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:24:41] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:24:42] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:24:43] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:24:51] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:24:52] "GET /1/ HTTP/1.1" 200 563
+[14/Apr/2020 17:25:14] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:25:14] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:25:15] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:25:15] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:19] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:19] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:20] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:20] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:20] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:20] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:20] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:21] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:22] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:22] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:23] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:23] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:23] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:23] "GET / HTTP/1.1" 200 286
+[14/Apr/2020 17:26:46] "GET /1/ HTTP/1.1" 200 563

@@ -23,6 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'hyy9a#w+j+2$m6se$6no#sg2dwy(_@%72s#bg3*ka@9vb_dtve'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 设置True,默认本机浏览器访问调试
+# 设置False，生产必须填写ALLOWED_HOSTS， 使用 ['*'] 容许所有域名访问
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -31,12 +33,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin',             # 后台管理系统
+    'django.contrib.auth',              # 用户认证系统
+    'django.contrib.contenttypes',      # 模型Model元数据
+    'django.contrib.sessions',          # 会话， 用于记录用户信息
+    'django.contrib.messages',          # 消息提示功能
+    'django.contrib.staticfiles',       # 静态资源查找
 
     'celery_demo',
     'djcelery'
@@ -45,6 +47,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',            # 新增中间件， 支持中文显示
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,7 +60,7 @@ ROOT_URLCONF = 'dj_celery_demo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],                   # 指定 templates 位置
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,10 +80,19 @@ WSGI_APPLICATION = 'dj_celery_demo.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': {                      #使用默认 default
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    #,
+    #'mysql': {
+    #    'ENGINE': 'django.db.backends.mysql',
+    #    'NAME': 'django',
+    #    'USER': 'root',
+    #    'PASSWORD': '123456',
+    #    'HOST': '123.123.123.123',
+    #    'PORT': '3306',
+    #},
 }
 
 
@@ -122,6 +134,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# 项目上线时， 必须配置  STATICFILES_ROOT 然后执行 python manage.py collectstaic 实现服务器和项目之间的映射
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),] 
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
-# celery
+
+
+# 导入celery 配置
 from .celeryconfig import *

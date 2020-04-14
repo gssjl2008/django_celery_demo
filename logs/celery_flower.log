@@ -123,3 +123,4 @@ Please make sure you give each node a unique nodename using the `-n` option.
 [W 200414 11:07:32 control:44] 'reserved' inspect method failed
 [W 200414 11:07:32 control:44] 'revoked' inspect method failed
 [W 200414 11:07:32 control:44] 'conf' inspect method failed
+[I 200414 14:04:39 command:44] SIGTERM detected, shutting down

@@ -13,14 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-import sys
-print(sys.path)
 from django.contrib import admin
 from django.urls import path
-from celery_demo.views import do, index
+from celery_demo.views import do, index, detail, result, vote
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('do/', do),
-    path('index/', index)
+    path('', index, name='index'),
+    path('<int:question_id>/', detail, name='detail'),
+    path('<int:question_id>/result/', result, name="result"),
+    path('<int:question_id>/vote/', vote, name="vote"),
 ]
