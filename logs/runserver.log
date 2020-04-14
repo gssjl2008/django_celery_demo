@@ -33,3 +33,6 @@ Not Found: /d
 [13/Apr/2020 22:21:13] "GET /d HTTP/1.1" 404 2159
 [13/Apr/2020 22:21:15] "GET /do HTTP/1.1" 301 0
 [13/Apr/2020 22:21:15] "GET /do/ HTTP/1.1" 200 55
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader

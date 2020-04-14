@@ -107,3 +107,92 @@ Stale pidfile exists. Removing it.
 [2020-04-13 22:23:22,060: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
 [2020-04-13 22:23:32,060: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
 [2020-04-13 22:23:42,063: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+Stale pidfile exists. Removing it.
+[2020-04-14 10:32:02,667: INFO/MainProcess] beat: Starting...
+[2020-04-14 10:32:06,539: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:32:16,540: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:32:26,540: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:32:36,540: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:32:46,541: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:32:56,541: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:33:06,541: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:33:16,541: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:33:26,542: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:33:36,542: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:33:46,542: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:33:56,543: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:34:06,543: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:34:16,544: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:34:26,544: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:34:36,544: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:34:46,544: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:34:56,544: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:35:06,545: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:35:16,545: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:35:26,545: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:35:36,545: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:35:46,546: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:35:56,546: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:36:06,546: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:36:16,546: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:36:26,546: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:36:36,547: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:36:46,547: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:36:56,547: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:37:06,547: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:37:16,548: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:37:26,548: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:37:36,548: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:37:46,548: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:37:56,549: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:38:06,549: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:38:16,549: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:38:26,549: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:38:36,550: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:38:46,550: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:38:56,550: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:39:06,550: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:39:16,551: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:39:26,551: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:39:36,551: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:39:46,551: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:39:56,551: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:40:06,552: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:40:16,552: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:40:26,552: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+celery beat v3.1.26.post2 (Cipater) is starting.
+__    -    ... __   -        _
+Configuration ->
+    . broker -> redis://127.0.0.1:6379/1
+    . loader -> djcelery.loaders.DjangoLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> now (0s)
+[2020-04-14 10:41:04,547: INFO/MainProcess] beat: Starting...
+[2020-04-14 10:41:04,722: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:41:14,789: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:41:24,790: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:41:34,790: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 10:41:44,790: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+celery beat v3.1.26.post2 (Cipater) is starting.
+__    -    ... __   -        _
+Configuration ->
+    . broker -> redis://127.0.0.1:6379/1
+    . loader -> djcelery.loaders.DjangoLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> celerybeat-schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> now (0s)
+[2020-04-14 11:07:28,642: INFO/MainProcess] beat: Starting...
+[2020-04-14 11:07:28,795: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:07:38,812: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:07:48,812: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:07:58,812: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:08:08,813: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:08:18,813: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:08:28,813: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:08:38,814: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:08:48,814: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:08:58,814: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)
+[2020-04-14 11:09:08,815: INFO/MainProcess] Scheduler: Sending due task task1 (dj_celery_demo)

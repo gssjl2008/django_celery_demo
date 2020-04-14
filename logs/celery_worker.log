@@ -528,3 +528,453 @@ You must only enable the serializers that you will actually use.
 [2020-04-13 22:23:45,070: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
 [2020-04-13 22:23:45,071: WARNING/Worker-2] task end...
 [2020-04-13 22:23:45,073: INFO/MainProcess] Task dj_celery_demo[aa0a8437-9d54-4aa7-8a51-4fcaf29f4765] succeeded in 3.005661922999934s: None
+[2020-04-14 10:32:03,161: WARNING/MainProcess] /home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2020-04-14 10:32:03,635: INFO/MainProcess] Connected to redis://127.0.0.1:6379/1
+[2020-04-14 10:32:03,678: INFO/MainProcess] mingle: searching for neighbors
+[2020-04-14 10:32:04,787: INFO/MainProcess] mingle: all alone
+[2020-04-14 10:32:04,833: WARNING/MainProcess] /home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/djcelery/loaders.py:133: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-04-14 10:32:04,834: WARNING/MainProcess] celery@DESKTOP-E18122D ready.
+[2020-04-14 10:32:06,544: INFO/MainProcess] Received task: dj_celery_demo[8a874812-b63b-4120-ad20-b84bab3363be]
+[2020-04-14 10:32:06,547: WARNING/Worker-2] task start...
+[2020-04-14 10:32:07,700: INFO/MainProcess] Events of group {task} enabled by remote.
+[2020-04-14 10:32:09,548: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:32:09,548: WARNING/Worker-2] task end...
+[2020-04-14 10:32:09,552: INFO/MainProcess] Task dj_celery_demo[8a874812-b63b-4120-ad20-b84bab3363be] succeeded in 3.005616000000373s: None
+[2020-04-14 10:32:16,542: INFO/MainProcess] Received task: dj_celery_demo[241305cc-1956-42d0-b9a0-66653d3ba94c]
+[2020-04-14 10:32:16,544: WARNING/Worker-3] task start...
+[2020-04-14 10:32:19,546: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:32:19,546: WARNING/Worker-3] task end...
+[2020-04-14 10:32:19,555: INFO/MainProcess] Task dj_celery_demo[241305cc-1956-42d0-b9a0-66653d3ba94c] succeeded in 3.0110909999993964s: None
+[2020-04-14 10:32:26,542: INFO/MainProcess] Received task: dj_celery_demo[b0f778a7-6724-4314-a37f-005a2f1087d7]
+[2020-04-14 10:32:26,544: WARNING/Worker-1] task start...
+[2020-04-14 10:32:29,545: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:32:29,546: WARNING/Worker-1] task end...
+[2020-04-14 10:32:29,551: INFO/MainProcess] Task dj_celery_demo[b0f778a7-6724-4314-a37f-005a2f1087d7] succeeded in 3.007144000000153s: None
+[2020-04-14 10:32:36,543: INFO/MainProcess] Received task: dj_celery_demo[497b9e4d-63ef-48c5-afe3-0bdb3b8b977c]
+[2020-04-14 10:32:36,546: WARNING/Worker-4] task start...
+[2020-04-14 10:32:39,547: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:32:39,547: WARNING/Worker-4] task end...
+[2020-04-14 10:32:39,551: INFO/MainProcess] Task dj_celery_demo[497b9e4d-63ef-48c5-afe3-0bdb3b8b977c] succeeded in 3.0064110000002984s: None
+[2020-04-14 10:32:46,543: INFO/MainProcess] Received task: dj_celery_demo[8f128b33-3caa-4b9b-9d5c-ac198d8da140]
+[2020-04-14 10:32:46,545: WARNING/Worker-2] task start...
+[2020-04-14 10:32:49,546: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:32:49,546: WARNING/Worker-2] task end...
+[2020-04-14 10:32:49,548: INFO/MainProcess] Task dj_celery_demo[8f128b33-3caa-4b9b-9d5c-ac198d8da140] succeeded in 3.002389000000221s: None
+[2020-04-14 10:32:56,542: INFO/MainProcess] Received task: dj_celery_demo[25997dff-35df-4b74-bc8b-0653cb95483d]
+[2020-04-14 10:32:56,544: WARNING/Worker-3] task start...
+[2020-04-14 10:32:59,545: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:32:59,545: WARNING/Worker-3] task end...
+[2020-04-14 10:32:59,547: INFO/MainProcess] Task dj_celery_demo[25997dff-35df-4b74-bc8b-0653cb95483d] succeeded in 3.002378000000135s: None
+[2020-04-14 10:33:06,543: INFO/MainProcess] Received task: dj_celery_demo[895f1432-bd02-4d1c-b794-36f8d2cc56a3]
+[2020-04-14 10:33:06,546: WARNING/Worker-1] task start...
+[2020-04-14 10:33:09,546: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:33:09,547: WARNING/Worker-1] task end...
+[2020-04-14 10:33:09,548: INFO/MainProcess] Task dj_celery_demo[895f1432-bd02-4d1c-b794-36f8d2cc56a3] succeeded in 3.0023410000003423s: None
+[2020-04-14 10:33:16,547: INFO/MainProcess] Received task: dj_celery_demo[ec87808f-c822-4053-935f-76385eef0f6e]
+[2020-04-14 10:33:16,550: WARNING/Worker-4] task start...
+[2020-04-14 10:33:19,563: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:33:19,563: WARNING/Worker-4] task end...
+[2020-04-14 10:33:19,623: INFO/MainProcess] Task dj_celery_demo[ec87808f-c822-4053-935f-76385eef0f6e] succeeded in 3.066157000000203s: None
+[2020-04-14 10:33:26,544: INFO/MainProcess] Received task: dj_celery_demo[7502588f-68a5-4ff5-80f7-373874968ec4]
+[2020-04-14 10:33:26,545: WARNING/Worker-2] task start...
+[2020-04-14 10:33:29,546: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:33:29,546: WARNING/Worker-2] task end...
+[2020-04-14 10:33:29,548: INFO/MainProcess] Task dj_celery_demo[7502588f-68a5-4ff5-80f7-373874968ec4] succeeded in 3.002220999999736s: None
+[2020-04-14 10:33:36,544: INFO/MainProcess] Received task: dj_celery_demo[4f6ef041-f68f-48a3-9ec3-2af80821dfe1]
+[2020-04-14 10:33:36,545: WARNING/Worker-3] task start...
+[2020-04-14 10:33:39,548: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:33:39,548: WARNING/Worker-3] task end...
+[2020-04-14 10:33:39,553: INFO/MainProcess] Task dj_celery_demo[4f6ef041-f68f-48a3-9ec3-2af80821dfe1] succeeded in 3.0074359999998705s: None
+[2020-04-14 10:33:46,544: INFO/MainProcess] Received task: dj_celery_demo[fcd329ba-a44d-45d1-b24c-9d1bd5164bc8]
+[2020-04-14 10:33:46,546: WARNING/Worker-1] task start...
+[2020-04-14 10:33:49,546: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:33:49,546: WARNING/Worker-1] task end...
+[2020-04-14 10:33:49,548: INFO/MainProcess] Task dj_celery_demo[fcd329ba-a44d-45d1-b24c-9d1bd5164bc8] succeeded in 3.00249199999962s: None
+[2020-04-14 10:33:56,546: INFO/MainProcess] Received task: dj_celery_demo[ef9deafd-dd62-42ea-8be1-b8613bbd4eb8]
+[2020-04-14 10:33:56,547: WARNING/Worker-4] task start...
+[2020-04-14 10:33:59,548: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:33:59,549: WARNING/Worker-4] task end...
+[2020-04-14 10:33:59,551: INFO/MainProcess] Task dj_celery_demo[ef9deafd-dd62-42ea-8be1-b8613bbd4eb8] succeeded in 3.0035250000000815s: None
+[2020-04-14 10:34:06,545: INFO/MainProcess] Received task: dj_celery_demo[340a91a9-67f0-4e48-9052-4c285d58982c]
+[2020-04-14 10:34:06,546: WARNING/Worker-2] task start...
+[2020-04-14 10:34:09,547: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:34:09,547: WARNING/Worker-2] task end...
+[2020-04-14 10:34:09,549: INFO/MainProcess] Task dj_celery_demo[340a91a9-67f0-4e48-9052-4c285d58982c] succeeded in 3.0022289999997156s: None
+[2020-04-14 10:34:16,545: INFO/MainProcess] Received task: dj_celery_demo[ed55df11-2083-4222-ac07-92f6e5ad8f17]
+[2020-04-14 10:34:16,546: WARNING/Worker-3] task start...
+[2020-04-14 10:34:19,547: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:34:19,547: WARNING/Worker-3] task end...
+[2020-04-14 10:34:19,549: INFO/MainProcess] Task dj_celery_demo[ed55df11-2083-4222-ac07-92f6e5ad8f17] succeeded in 3.0019410000004427s: None
+[2020-04-14 10:34:26,545: INFO/MainProcess] Received task: dj_celery_demo[c7f82783-2143-4634-a041-85123d6c62a9]
+[2020-04-14 10:34:26,547: WARNING/Worker-1] task start...
+[2020-04-14 10:34:29,547: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:34:29,548: WARNING/Worker-1] task end...
+[2020-04-14 10:34:29,549: INFO/MainProcess] Task dj_celery_demo[c7f82783-2143-4634-a041-85123d6c62a9] succeeded in 3.0020480000002863s: None
+[2020-04-14 10:34:36,548: INFO/MainProcess] Received task: dj_celery_demo[a5b16196-4b49-4cf7-bc0e-29ea56cf0012]
+[2020-04-14 10:34:36,550: WARNING/Worker-4] task start...
+[2020-04-14 10:34:39,551: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:34:39,551: WARNING/Worker-4] task end...
+[2020-04-14 10:34:39,553: INFO/MainProcess] Task dj_celery_demo[a5b16196-4b49-4cf7-bc0e-29ea56cf0012] succeeded in 3.0024249999996755s: None
+[2020-04-14 10:34:46,546: INFO/MainProcess] Received task: dj_celery_demo[8e6801b0-0686-4018-b9f5-9b09fb69e4eb]
+[2020-04-14 10:34:46,548: WARNING/Worker-2] task start...
+[2020-04-14 10:34:49,548: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:34:49,548: WARNING/Worker-2] task end...
+[2020-04-14 10:34:49,550: INFO/MainProcess] Task dj_celery_demo[8e6801b0-0686-4018-b9f5-9b09fb69e4eb] succeeded in 3.002155999999559s: None
+[2020-04-14 10:34:56,546: INFO/MainProcess] Received task: dj_celery_demo[f44ccc9d-3656-4868-8387-1236abf451f7]
+[2020-04-14 10:34:56,548: WARNING/Worker-3] task start...
+[2020-04-14 10:34:59,548: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:34:59,548: WARNING/Worker-3] task end...
+[2020-04-14 10:34:59,550: INFO/MainProcess] Task dj_celery_demo[f44ccc9d-3656-4868-8387-1236abf451f7] succeeded in 3.0019189999993614s: None
+[2020-04-14 10:35:06,546: INFO/MainProcess] Received task: dj_celery_demo[2261126c-49a5-4deb-809d-50bdc8569249]
+[2020-04-14 10:35:06,548: WARNING/Worker-1] task start...
+[2020-04-14 10:35:09,548: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:35:09,548: WARNING/Worker-1] task end...
+[2020-04-14 10:35:09,554: INFO/MainProcess] Task dj_celery_demo[2261126c-49a5-4deb-809d-50bdc8569249] succeeded in 3.0054110000000946s: None
+[2020-04-14 10:35:16,547: INFO/MainProcess] Received task: dj_celery_demo[3cf94a0f-d306-42ef-9229-2f11bccb8f78]
+[2020-04-14 10:35:16,548: WARNING/Worker-4] task start...
+[2020-04-14 10:35:19,548: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:35:19,549: WARNING/Worker-4] task end...
+[2020-04-14 10:35:19,550: INFO/MainProcess] Task dj_celery_demo[3cf94a0f-d306-42ef-9229-2f11bccb8f78] succeeded in 3.002038999999968s: None
+[2020-04-14 10:35:26,547: INFO/MainProcess] Received task: dj_celery_demo[59c4513c-d84f-4ff8-9e22-e0d3faad48ee]
+[2020-04-14 10:35:26,548: WARNING/Worker-2] task start...
+[2020-04-14 10:35:29,549: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:35:29,549: WARNING/Worker-2] task end...
+[2020-04-14 10:35:29,551: INFO/MainProcess] Task dj_celery_demo[59c4513c-d84f-4ff8-9e22-e0d3faad48ee] succeeded in 3.0023250000003827s: None
+[2020-04-14 10:35:36,547: INFO/MainProcess] Received task: dj_celery_demo[30ccd02f-7ec6-4e11-9d5a-30632ebfc629]
+[2020-04-14 10:35:36,548: WARNING/Worker-3] task start...
+[2020-04-14 10:35:39,549: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:35:39,549: WARNING/Worker-3] task end...
+[2020-04-14 10:35:39,551: INFO/MainProcess] Task dj_celery_demo[30ccd02f-7ec6-4e11-9d5a-30632ebfc629] succeeded in 3.001940000000104s: None
+[2020-04-14 10:35:46,547: INFO/MainProcess] Received task: dj_celery_demo[7caceed3-ea9f-4798-ae6d-89a8c17d56b2]
+[2020-04-14 10:35:46,549: WARNING/Worker-1] task start...
+[2020-04-14 10:35:49,549: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:35:49,549: WARNING/Worker-1] task end...
+[2020-04-14 10:35:49,551: INFO/MainProcess] Task dj_celery_demo[7caceed3-ea9f-4798-ae6d-89a8c17d56b2] succeeded in 3.0022020000005796s: None
+[2020-04-14 10:35:56,547: INFO/MainProcess] Received task: dj_celery_demo[86c16cd5-c060-4cfa-a847-557bce5e88a2]
+[2020-04-14 10:35:56,549: WARNING/Worker-4] task start...
+[2020-04-14 10:35:59,549: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:35:59,550: WARNING/Worker-4] task end...
+[2020-04-14 10:35:59,551: INFO/MainProcess] Task dj_celery_demo[86c16cd5-c060-4cfa-a847-557bce5e88a2] succeeded in 3.002258000000438s: None
+[2020-04-14 10:36:06,548: INFO/MainProcess] Received task: dj_celery_demo[9437c9f7-a439-48ab-96cd-4697408150a6]
+[2020-04-14 10:36:06,549: WARNING/Worker-2] task start...
+[2020-04-14 10:36:09,550: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:36:09,550: WARNING/Worker-2] task end...
+[2020-04-14 10:36:09,552: INFO/MainProcess] Task dj_celery_demo[9437c9f7-a439-48ab-96cd-4697408150a6] succeeded in 3.002394000000095s: None
+[2020-04-14 10:36:16,549: INFO/MainProcess] Received task: dj_celery_demo[c6b36060-4b40-4fba-8ad3-fd4baded0086]
+[2020-04-14 10:36:16,552: WARNING/Worker-3] task start...
+[2020-04-14 10:36:19,552: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:36:19,552: WARNING/Worker-3] task end...
+[2020-04-14 10:36:19,554: INFO/MainProcess] Task dj_celery_demo[c6b36060-4b40-4fba-8ad3-fd4baded0086] succeeded in 3.0022760000001654s: None
+[2020-04-14 10:36:26,548: INFO/MainProcess] Received task: dj_celery_demo[d77050a5-88ae-4c2d-a9ea-7f7c4ee385cd]
+[2020-04-14 10:36:26,550: WARNING/Worker-1] task start...
+[2020-04-14 10:36:29,550: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:36:29,550: WARNING/Worker-1] task end...
+[2020-04-14 10:36:29,552: INFO/MainProcess] Task dj_celery_demo[d77050a5-88ae-4c2d-a9ea-7f7c4ee385cd] succeeded in 3.0023100000007616s: None
+[2020-04-14 10:36:36,549: INFO/MainProcess] Received task: dj_celery_demo[532bbda6-e885-493a-b542-ede459c6c78f]
+[2020-04-14 10:36:36,551: WARNING/Worker-4] task start...
+[2020-04-14 10:36:39,551: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:36:39,552: WARNING/Worker-4] task end...
+[2020-04-14 10:36:39,554: INFO/MainProcess] Task dj_celery_demo[532bbda6-e885-493a-b542-ede459c6c78f] succeeded in 3.002230000000054s: None
+[2020-04-14 10:36:46,549: INFO/MainProcess] Received task: dj_celery_demo[c6685808-9072-49fb-b386-51185ecbbc55]
+[2020-04-14 10:36:46,550: WARNING/Worker-2] task start...
+[2020-04-14 10:36:49,551: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:36:49,551: WARNING/Worker-2] task end...
+[2020-04-14 10:36:49,555: INFO/MainProcess] Task dj_celery_demo[c6685808-9072-49fb-b386-51185ecbbc55] succeeded in 3.0035470000002533s: None
+[2020-04-14 10:36:56,549: INFO/MainProcess] Received task: dj_celery_demo[2ae9887c-df4c-4003-9d0a-82c1d86363ec]
+[2020-04-14 10:36:56,550: WARNING/Worker-3] task start...
+[2020-04-14 10:36:59,551: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:36:59,551: WARNING/Worker-3] task end...
+[2020-04-14 10:36:59,553: INFO/MainProcess] Task dj_celery_demo[2ae9887c-df4c-4003-9d0a-82c1d86363ec] succeeded in 3.002061999999569s: None
+[2020-04-14 10:37:06,549: INFO/MainProcess] Received task: dj_celery_demo[958bbcc6-c283-41d6-a8f3-9bf0a675036a]
+[2020-04-14 10:37:06,550: WARNING/Worker-1] task start...
+[2020-04-14 10:37:09,551: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:37:09,551: WARNING/Worker-1] task end...
+[2020-04-14 10:37:09,553: INFO/MainProcess] Task dj_celery_demo[958bbcc6-c283-41d6-a8f3-9bf0a675036a] succeeded in 3.002204999999776s: None
+[2020-04-14 10:37:16,549: INFO/MainProcess] Received task: dj_celery_demo[736ffc52-5f54-4193-a24a-0d11c66af708]
+[2020-04-14 10:37:16,551: WARNING/Worker-4] task start...
+[2020-04-14 10:37:19,551: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:37:19,551: WARNING/Worker-4] task end...
+[2020-04-14 10:37:19,554: INFO/MainProcess] Task dj_celery_demo[736ffc52-5f54-4193-a24a-0d11c66af708] succeeded in 3.002324999999473s: None
+[2020-04-14 10:37:26,550: INFO/MainProcess] Received task: dj_celery_demo[5043cdce-bfa1-41ac-89b2-3d3262608c85]
+[2020-04-14 10:37:26,552: WARNING/Worker-2] task start...
+[2020-04-14 10:37:29,552: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:37:29,552: WARNING/Worker-2] task end...
+[2020-04-14 10:37:29,554: INFO/MainProcess] Task dj_celery_demo[5043cdce-bfa1-41ac-89b2-3d3262608c85] succeeded in 3.0025239999995392s: None
+[2020-04-14 10:37:36,550: INFO/MainProcess] Received task: dj_celery_demo[9907f6b3-2353-4973-b9e7-319cdde4594c]
+[2020-04-14 10:37:36,551: WARNING/Worker-3] task start...
+[2020-04-14 10:37:39,553: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:37:39,553: WARNING/Worker-3] task end...
+[2020-04-14 10:37:39,562: INFO/MainProcess] Task dj_celery_demo[9907f6b3-2353-4973-b9e7-319cdde4594c] succeeded in 3.007746999999654s: None
+[2020-04-14 10:37:46,550: INFO/MainProcess] Received task: dj_celery_demo[58dce03c-2ed5-4544-9742-af9928269276]
+[2020-04-14 10:37:46,553: WARNING/Worker-1] task start...
+[2020-04-14 10:37:49,554: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:37:49,554: WARNING/Worker-1] task end...
+[2020-04-14 10:37:49,556: INFO/MainProcess] Task dj_celery_demo[58dce03c-2ed5-4544-9742-af9928269276] succeeded in 3.002929000000222s: None
+[2020-04-14 10:37:56,550: INFO/MainProcess] Received task: dj_celery_demo[0b8a103f-9799-4bff-8eae-25dd5e69836a]
+[2020-04-14 10:37:56,552: WARNING/Worker-4] task start...
+[2020-04-14 10:37:59,552: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:37:59,552: WARNING/Worker-4] task end...
+[2020-04-14 10:37:59,555: INFO/MainProcess] Task dj_celery_demo[0b8a103f-9799-4bff-8eae-25dd5e69836a] succeeded in 3.0032129999999597s: None
+[2020-04-14 10:38:06,551: INFO/MainProcess] Received task: dj_celery_demo[db3eadb5-92a1-4e44-8ea1-df0823e13781]
+[2020-04-14 10:38:06,552: WARNING/Worker-2] task start...
+[2020-04-14 10:38:09,553: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:38:09,553: WARNING/Worker-2] task end...
+[2020-04-14 10:38:09,559: INFO/MainProcess] Task dj_celery_demo[db3eadb5-92a1-4e44-8ea1-df0823e13781] succeeded in 3.0054440000003524s: None
+[2020-04-14 10:38:16,551: INFO/MainProcess] Received task: dj_celery_demo[156260c1-0e6f-4ccd-8e7d-2b40e6644384]
+[2020-04-14 10:38:16,552: WARNING/Worker-3] task start...
+[2020-04-14 10:38:19,553: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:38:19,553: WARNING/Worker-3] task end...
+[2020-04-14 10:38:19,557: INFO/MainProcess] Task dj_celery_demo[156260c1-0e6f-4ccd-8e7d-2b40e6644384] succeeded in 3.0038720000002286s: None
+[2020-04-14 10:38:26,551: INFO/MainProcess] Received task: dj_celery_demo[dc8c9b73-6994-4814-a204-0975c0dd1864]
+[2020-04-14 10:38:26,553: WARNING/Worker-1] task start...
+[2020-04-14 10:38:29,553: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:38:29,553: WARNING/Worker-1] task end...
+[2020-04-14 10:38:29,556: INFO/MainProcess] Task dj_celery_demo[dc8c9b73-6994-4814-a204-0975c0dd1864] succeeded in 3.0027740000004997s: None
+[2020-04-14 10:38:36,552: INFO/MainProcess] Received task: dj_celery_demo[ad3f72b3-d062-491d-a318-5192b58ff0d8]
+[2020-04-14 10:38:36,554: WARNING/Worker-4] task start...
+[2020-04-14 10:38:39,555: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:38:39,556: WARNING/Worker-4] task end...
+[2020-04-14 10:38:39,566: INFO/MainProcess] Task dj_celery_demo[ad3f72b3-d062-491d-a318-5192b58ff0d8] succeeded in 3.011543000000529s: None
+[2020-04-14 10:38:46,552: INFO/MainProcess] Received task: dj_celery_demo[22426425-460c-47f0-9909-19dce2ee035e]
+[2020-04-14 10:38:46,553: WARNING/Worker-2] task start...
+[2020-04-14 10:38:49,558: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:38:49,559: WARNING/Worker-2] task end...
+[2020-04-14 10:38:49,566: INFO/MainProcess] Task dj_celery_demo[22426425-460c-47f0-9909-19dce2ee035e] succeeded in 3.0121509999999034s: None
+[2020-04-14 10:38:56,552: INFO/MainProcess] Received task: dj_celery_demo[bbfccac0-f574-4690-bd53-aa2b38ac7827]
+[2020-04-14 10:38:56,554: WARNING/Worker-3] task start...
+[2020-04-14 10:38:59,554: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:38:59,555: WARNING/Worker-3] task end...
+[2020-04-14 10:38:59,557: INFO/MainProcess] Task dj_celery_demo[bbfccac0-f574-4690-bd53-aa2b38ac7827] succeeded in 3.0028519999996206s: None
+[2020-04-14 10:39:06,552: INFO/MainProcess] Received task: dj_celery_demo[316981f3-0762-44aa-a59f-1559d53d4521]
+[2020-04-14 10:39:06,554: WARNING/Worker-1] task start...
+[2020-04-14 10:39:09,554: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:39:09,555: WARNING/Worker-1] task end...
+[2020-04-14 10:39:09,563: INFO/MainProcess] Task dj_celery_demo[316981f3-0762-44aa-a59f-1559d53d4521] succeeded in 3.0072629999995115s: None
+[2020-04-14 10:39:16,555: INFO/MainProcess] Received task: dj_celery_demo[fdab4c66-3d35-4683-82fd-fc04545374d8]
+[2020-04-14 10:39:16,558: WARNING/Worker-4] task start...
+[2020-04-14 10:39:19,558: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:39:19,559: WARNING/Worker-4] task end...
+[2020-04-14 10:39:19,560: INFO/MainProcess] Task dj_celery_demo[fdab4c66-3d35-4683-82fd-fc04545374d8] succeeded in 3.002278999999362s: None
+[2020-04-14 10:39:26,553: INFO/MainProcess] Received task: dj_celery_demo[9526bccd-b1d6-4cb1-88b4-41313df1be47]
+[2020-04-14 10:39:26,554: WARNING/Worker-2] task start...
+[2020-04-14 10:39:29,555: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:39:29,555: WARNING/Worker-2] task end...
+[2020-04-14 10:39:29,557: INFO/MainProcess] Task dj_celery_demo[9526bccd-b1d6-4cb1-88b4-41313df1be47] succeeded in 3.002563000000009s: None
+[2020-04-14 10:39:36,553: INFO/MainProcess] Received task: dj_celery_demo[41d9326b-50b4-4986-93c2-ff0986fb7daf]
+[2020-04-14 10:39:36,555: WARNING/Worker-3] task start...
+[2020-04-14 10:39:39,555: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:39:39,555: WARNING/Worker-3] task end...
+[2020-04-14 10:39:39,557: INFO/MainProcess] Task dj_celery_demo[41d9326b-50b4-4986-93c2-ff0986fb7daf] succeeded in 3.002270999999382s: None
+[2020-04-14 10:39:46,553: INFO/MainProcess] Received task: dj_celery_demo[223a2f12-845e-4c83-bc01-f434632c9d0e]
+[2020-04-14 10:39:46,555: WARNING/Worker-1] task start...
+[2020-04-14 10:39:49,555: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:39:49,555: WARNING/Worker-1] task end...
+[2020-04-14 10:39:49,557: INFO/MainProcess] Task dj_celery_demo[223a2f12-845e-4c83-bc01-f434632c9d0e] succeeded in 3.0019890000003215s: None
+[2020-04-14 10:39:56,553: INFO/MainProcess] Received task: dj_celery_demo[79902db5-1300-4c88-b13a-72bb22f7e827]
+[2020-04-14 10:39:56,555: WARNING/Worker-4] task start...
+[2020-04-14 10:39:59,556: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:39:59,556: WARNING/Worker-4] task end...
+[2020-04-14 10:39:59,558: INFO/MainProcess] Task dj_celery_demo[79902db5-1300-4c88-b13a-72bb22f7e827] succeeded in 3.00242900000012s: None
+[2020-04-14 10:40:06,553: INFO/MainProcess] Received task: dj_celery_demo[5cecfbfb-bbea-471d-91dd-f2ebb36d1c55]
+[2020-04-14 10:40:06,555: WARNING/Worker-2] task start...
+[2020-04-14 10:40:09,555: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:40:09,556: WARNING/Worker-2] task end...
+[2020-04-14 10:40:09,557: INFO/MainProcess] Task dj_celery_demo[5cecfbfb-bbea-471d-91dd-f2ebb36d1c55] succeeded in 3.001914000000397s: None
+[2020-04-14 10:40:16,554: INFO/MainProcess] Received task: dj_celery_demo[293856e0-3672-4e56-adc9-e1f9ae1b6798]
+[2020-04-14 10:40:16,556: WARNING/Worker-3] task start...
+[2020-04-14 10:40:19,556: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:40:19,556: WARNING/Worker-3] task end...
+[2020-04-14 10:40:19,558: INFO/MainProcess] Task dj_celery_demo[293856e0-3672-4e56-adc9-e1f9ae1b6798] succeeded in 3.0021569999998974s: None
+[2020-04-14 10:40:26,554: INFO/MainProcess] Received task: dj_celery_demo[29d32b0c-9c46-42e9-a555-09baefc6e13d]
+[2020-04-14 10:40:26,556: WARNING/Worker-1] task start...
+[2020-04-14 10:40:29,557: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:40:29,557: WARNING/Worker-1] task end...
+[2020-04-14 10:40:29,559: INFO/MainProcess] Task dj_celery_demo[29d32b0c-9c46-42e9-a555-09baefc6e13d] succeeded in 3.0019929999998567s: None
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@DESKTOP-E18122D v3.1.26.post2 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-17134-Microsoft-x86_64-with-Ubuntu-18.04-bionic
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x7fb8ca6d5358 (djcelery.loaders.DjangoLoader)
+- ** ---------- .> transport:   redis://127.0.0.1:6379/1
+- ** ---------- .> results:     redis://127.0.0.1:6379/2
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> beat_tasks       exchange=beat_tasks(direct) key=beat_tasks
+                .> work_tasks       exchange=work_tasks(direct) key=work_tasks
+
+[tasks]
+  . dj_celery_demo
+
+[2020-04-14 10:41:04,737: WARNING/MainProcess] /home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2020-04-14 10:41:05,023: INFO/MainProcess] Connected to redis://127.0.0.1:6379/1
+[2020-04-14 10:41:05,039: INFO/MainProcess] mingle: searching for neighbors
+[2020-04-14 10:41:06,044: INFO/MainProcess] mingle: all alone
+[2020-04-14 10:41:06,054: WARNING/MainProcess] /home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/djcelery/loaders.py:133: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-04-14 10:41:06,055: WARNING/MainProcess] celery@DESKTOP-E18122D ready.
+[2020-04-14 10:41:06,621: INFO/MainProcess] Received task: dj_celery_demo[f08686a4-6fa0-4ee2-a40d-5074cb0f6f1a]
+[2020-04-14 10:41:06,623: WARNING/Worker-2] task start...
+[2020-04-14 10:41:09,623: INFO/MainProcess] Events of group {task} enabled by remote.
+[2020-04-14 10:41:09,624: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:41:09,624: WARNING/Worker-2] task end...
+[2020-04-14 10:41:09,628: INFO/MainProcess] Task dj_celery_demo[f08686a4-6fa0-4ee2-a40d-5074cb0f6f1a] succeeded in 3.0048759999999675s: None
+[2020-04-14 10:41:14,792: INFO/MainProcess] Received task: dj_celery_demo[ce49adb8-5819-47d3-b86d-e72a352a51d1]
+[2020-04-14 10:41:14,796: WARNING/Worker-3] task start...
+[2020-04-14 10:41:17,797: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:41:17,797: WARNING/Worker-3] task end...
+[2020-04-14 10:41:17,801: INFO/MainProcess] Task dj_celery_demo[ce49adb8-5819-47d3-b86d-e72a352a51d1] succeeded in 3.0059000000001106s: None
+[2020-04-14 10:41:24,791: INFO/MainProcess] Received task: dj_celery_demo[6600f3ec-2454-4908-b474-3a3bbdaadf0c]
+[2020-04-14 10:41:24,794: WARNING/Worker-1] task start...
+[2020-04-14 10:41:27,795: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:41:27,795: WARNING/Worker-1] task end...
+[2020-04-14 10:41:27,799: INFO/MainProcess] Task dj_celery_demo[6600f3ec-2454-4908-b474-3a3bbdaadf0c] succeeded in 3.0055279999996856s: None
+[2020-04-14 10:41:34,792: INFO/MainProcess] Received task: dj_celery_demo[6c1531b8-3183-40bb-8b26-7b28a0a8bea4]
+[2020-04-14 10:41:34,794: WARNING/Worker-4] task start...
+[2020-04-14 10:41:37,795: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:41:37,795: WARNING/Worker-4] task end...
+[2020-04-14 10:41:37,801: INFO/MainProcess] Task dj_celery_demo[6c1531b8-3183-40bb-8b26-7b28a0a8bea4] succeeded in 3.0068350000001374s: None
+[2020-04-14 10:41:44,792: INFO/MainProcess] Received task: dj_celery_demo[9dc45b3d-9ac9-4b80-8caf-9ce951cfdbc2]
+[2020-04-14 10:41:44,793: WARNING/Worker-2] task start...
+[2020-04-14 10:41:47,794: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 10:41:47,794: WARNING/Worker-2] task end...
+
+worker: Warm shutdown (MainProcess)
+[2020-04-14 10:41:47,980: INFO/MainProcess] Task dj_celery_demo[9dc45b3d-9ac9-4b80-8caf-9ce951cfdbc2] succeeded in 3.186055000000124s: None
+ 
+ -------------- celery@DESKTOP-E18122D v3.1.26.post2 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-17134-Microsoft-x86_64-with-Ubuntu-18.04-bionic
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x7f74ba5b3358 (djcelery.loaders.DjangoLoader)
+- ** ---------- .> transport:   redis://127.0.0.1:6379/1
+- ** ---------- .> results:     redis://127.0.0.1:6379/2
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> beat_tasks       exchange=beat_tasks(direct) key=beat_tasks
+                .> work_tasks       exchange=work_tasks(direct) key=work_tasks
+
+[tasks]
+  . dj_celery_demo
+
+[2020-04-14 11:07:28,714: WARNING/MainProcess] /home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2020-04-14 11:07:28,991: INFO/MainProcess] Connected to redis://127.0.0.1:6379/1
+[2020-04-14 11:07:29,005: INFO/MainProcess] mingle: searching for neighbors
+[2020-04-14 11:07:30,010: INFO/MainProcess] mingle: all alone
+[2020-04-14 11:07:30,020: WARNING/MainProcess] /home/wx/pyenvs/dj_celery/lib/python3.6/site-packages/djcelery/loaders.py:133: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-04-14 11:07:30,020: WARNING/MainProcess] celery@DESKTOP-E18122D ready.
+[2020-04-14 11:07:30,562: INFO/MainProcess] Received task: dj_celery_demo[425494eb-8272-4f24-9571-137270baabfa]
+[2020-04-14 11:07:30,564: WARNING/Worker-2] task start...
+[2020-04-14 11:07:33,565: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:07:33,565: WARNING/Worker-2] task end...
+[2020-04-14 11:07:33,569: INFO/MainProcess] Task dj_celery_demo[425494eb-8272-4f24-9571-137270baabfa] succeeded in 3.0057349999997314s: None
+[2020-04-14 11:07:33,653: INFO/MainProcess] Events of group {task} enabled by remote.
+[2020-04-14 11:07:38,814: INFO/MainProcess] Received task: dj_celery_demo[1ba98ff9-8720-4bfa-b422-ceb3674a6e58]
+[2020-04-14 11:07:38,817: WARNING/Worker-3] task start...
+[2020-04-14 11:07:41,817: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:07:41,818: WARNING/Worker-3] task end...
+[2020-04-14 11:07:41,822: INFO/MainProcess] Task dj_celery_demo[1ba98ff9-8720-4bfa-b422-ceb3674a6e58] succeeded in 3.005627000000459s: None
+[2020-04-14 11:07:48,819: INFO/MainProcess] Received task: dj_celery_demo[e80be9f0-7a71-4f8a-85ff-8f8cc54c57c0]
+[2020-04-14 11:07:48,822: WARNING/Worker-1] task start...
+[2020-04-14 11:07:51,823: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:07:51,823: WARNING/Worker-1] task end...
+[2020-04-14 11:07:51,828: INFO/MainProcess] Task dj_celery_demo[e80be9f0-7a71-4f8a-85ff-8f8cc54c57c0] succeeded in 3.0070089999999254s: None
+[2020-04-14 11:07:58,815: INFO/MainProcess] Received task: dj_celery_demo[69ce5bd8-de7d-4141-b9a8-00655560da31]
+[2020-04-14 11:07:58,818: WARNING/Worker-4] task start...
+[2020-04-14 11:08:01,819: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:08:01,819: WARNING/Worker-4] task end...
+[2020-04-14 11:08:01,824: INFO/MainProcess] Task dj_celery_demo[69ce5bd8-de7d-4141-b9a8-00655560da31] succeeded in 3.006424999999581s: None
+[2020-04-14 11:08:08,815: INFO/MainProcess] Received task: dj_celery_demo[70e558a8-5902-4910-93eb-f26d743020b2]
+[2020-04-14 11:08:08,817: WARNING/Worker-2] task start...
+[2020-04-14 11:08:11,817: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:08:11,817: WARNING/Worker-2] task end...
+[2020-04-14 11:08:11,819: INFO/MainProcess] Task dj_celery_demo[70e558a8-5902-4910-93eb-f26d743020b2] succeeded in 3.0020629999999073s: None
+[2020-04-14 11:08:18,815: INFO/MainProcess] Received task: dj_celery_demo[d6feda88-485d-47d6-be0f-1019cdc0a414]
+[2020-04-14 11:08:18,817: WARNING/Worker-3] task start...
+[2020-04-14 11:08:21,818: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:08:21,818: WARNING/Worker-3] task end...
+[2020-04-14 11:08:21,820: INFO/MainProcess] Task dj_celery_demo[d6feda88-485d-47d6-be0f-1019cdc0a414] succeeded in 3.0023700000001554s: None
+[2020-04-14 11:08:28,816: INFO/MainProcess] Received task: dj_celery_demo[f2d03283-bb32-48be-9450-4c6e712ebfd0]
+[2020-04-14 11:08:28,817: WARNING/Worker-1] task start...
+[2020-04-14 11:08:31,818: WARNING/Worker-1] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:08:31,818: WARNING/Worker-1] task end...
+[2020-04-14 11:08:31,820: INFO/MainProcess] Task dj_celery_demo[f2d03283-bb32-48be-9450-4c6e712ebfd0] succeeded in 3.0019299999994473s: None
+[2020-04-14 11:08:38,816: INFO/MainProcess] Received task: dj_celery_demo[8ff3030a-adda-4629-a204-91dc0a030c5a]
+[2020-04-14 11:08:38,818: WARNING/Worker-4] task start...
+[2020-04-14 11:08:41,818: WARNING/Worker-4] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:08:41,818: WARNING/Worker-4] task end...
+[2020-04-14 11:08:41,820: INFO/MainProcess] Task dj_celery_demo[8ff3030a-adda-4629-a204-91dc0a030c5a] succeeded in 3.0022820000003776s: None
+[2020-04-14 11:08:48,822: INFO/MainProcess] Received task: dj_celery_demo[07b3c9c0-7faf-4f84-a9d3-709fdd064b28]
+[2020-04-14 11:08:48,827: WARNING/Worker-2] task start...
+[2020-04-14 11:08:51,828: WARNING/Worker-2] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:08:51,828: WARNING/Worker-2] task end...
+[2020-04-14 11:08:51,830: INFO/MainProcess] Task dj_celery_demo[07b3c9c0-7faf-4f84-a9d3-709fdd064b28] succeeded in 3.0022060000001147s: None
+[2020-04-14 11:08:58,817: INFO/MainProcess] Received task: dj_celery_demo[cc040ff5-da87-40bc-8e0e-a56b2bcfe080]
+[2020-04-14 11:08:58,818: WARNING/Worker-3] task start...
+[2020-04-14 11:09:01,819: WARNING/Worker-3] args:(1, 10, 100), kwargs: {}
+[2020-04-14 11:09:01,819: WARNING/Worker-3] task end...
+[2020-04-14 11:09:01,821: INFO/MainProcess] Task dj_celery_demo[cc040ff5-da87-40bc-8e0e-a56b2bcfe080] succeeded in 3.0022790000002715s: None
+[2020-04-14 11:09:08,818: INFO/MainProcess] Received task: dj_celery_demo[ae2011ac-00e9-4d67-9a30-4a94653fbc87]
+[2020-04-14 11:09:08,822: WARNING/Worker-1] task start...
