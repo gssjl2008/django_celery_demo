@@ -30,6 +30,13 @@ def bubble_sort(data):
             if data[j] > data[j+1]:
                 data[j], data[j + 1] = data[j + 1], data[j]
 
+    # 或者使用以下while循环
+    while length > 0:
+        for i in range(length - 1):
+            if data[i] > data[i+1]:
+                data[i], data[i+1] = data[i+1], data[i]
+        length -= 1
+
     print(f"{sys._getframe().f_code.co_name} result data: {data}")
     return data
 
@@ -59,7 +66,7 @@ def select_sort(data):
 
 def insert_sort(data):
     '''
-    将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。
+    将待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。
     从头到尾依次扫描未排序序列，将扫描到的每个元素插入有序序列的适当位置。
     （如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面。）
     时间复杂度最好O(n),最坏O(n**2), 空间复杂度O(1)，圆度排序， 稳定排序
