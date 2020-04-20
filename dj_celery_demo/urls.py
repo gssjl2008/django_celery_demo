@@ -13,12 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.static import serve
+from dj_celery_demo import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('celery/', include('celery_demo.urls')),
-    path('sort/', include('sort_demo.urls'))
+    path('sort/', include('sort_demo.urls')),
+    path('ueditor/', include('DjangoUeditor.urls')),
+    path('blog/', include('blog.urls')),
+    re_path('^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 ]
+
+
+

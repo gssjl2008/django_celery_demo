@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# 富文本Ue上传单个图片不显示时， 增加这个解决问题
+X_FRAME_OPTIONS = 'ALLOWALL'
+
 
 # Application definition
 
@@ -42,6 +45,7 @@ INSTALLED_APPS = [
     'djcelery',
     'sort_demo',
     'blog',
+    'DjangoUeditor',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +63,7 @@ ROOT_URLCONF = 'dj_celery_demo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
