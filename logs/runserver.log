@@ -407,3 +407,4 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'index' with arguments '(1,)'
 [14/Apr/2020 17:26:23] "GET / HTTP/1.1" 200 286
 [14/Apr/2020 17:26:23] "GET / HTTP/1.1" 200 286
 [14/Apr/2020 17:26:46] "GET /1/ HTTP/1.1" 200 563
+Watching for file changes with StatReloader

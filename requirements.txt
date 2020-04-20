@@ -10,6 +10,7 @@ flower==0.9.4
 humanize==0.5.1
 kombu==3.0.37
 pathtools==0.1.2
+Pillow==7.1.1
 pytz==2019.3
 redis==2.10.6
 sqlparse==0.3.1
