@@ -6,7 +6,10 @@ from django.test import TestCase
 # 冒泡排序
 
 import random
+import sys
 from functools import wraps
+
+success = []
 
 def get_data(n=20):
     return [random.randint(1,100) for i in range(n)]
@@ -14,21 +17,24 @@ def get_data(n=20):
 def show(func):
     @wraps(func)
     def _inner(data):
-        print(f"data: {data}")
+        global result
+        print(f"{func.__name__}, data: {data}")
         tmp = data
-        print(f"tmp:{tmp}")
+        print(f"{func.__name__},tmp:{tmp}")
         result = func(data)
-        print(f"result: {result}")
+        print(f"{func.__name__}, result: {result}")
         if sorted(tmp) == result:
             print("result: True")
+            success.append(True)
         else:
             print(f"sorted: {sorted(tmp)}")
+            success.append(False)
         return result
     return _inner
 
-
+@show
 def bubble_sort(data):
-    print(f"data: {data}")
+    # print(f"data: {data}")
     length = len(data)
     if length <= 1:
         return data
@@ -38,8 +44,9 @@ def bubble_sort(data):
             if data[i] > data[i+1]:
                 data[i], data[i+1] = data[i+1], data[i]
         length -= 1
-    
-    print(f"result: {data}")
+
+    return data
+    # print(f"result: {data}")
 
 
 @show
@@ -94,8 +101,57 @@ def quick_sort(data):
     
     return result
 
+@show
+def bubble_sort2(data):
+    length = len(data)
+    if length <= 1:
+        return data
+
+    while length > 0:
+        for i in range(length - 1):
+            if data[i+1] < data[i]:
+                data[i], data[i+1] = data[i+1], data[i]
+        length -= 1
+    return data
+
+@show
+def insert_sort2(data):
+    length = len(data)
+    if length <= 1:
+        return data
+
+    for i in range(1, length):
+        j = i - 1
+        cur = data[i]
+        while j >=0 and data[j] > cur:
+            data[j+1] = data[i]
+            j -= 1
+        data[j + 1] = cur
+
+    return data
+
+
+@show
+def select_sort2(data):
+    length = len(data)
+    if length <= 1:
+        return data
+
+    for i in range(length - 1):
+        min = i
+        for j in range(i + 1, length):
+            if data[j] < data[min]:
+                min = j
+        data[i], data[min] = data[min], data[i]
+
+
+    return data
 
 if __name__ == '__main__':
-    data = get_data()
-    # data = [1,5,4,3,2]
-    quick_sort(data)
+
+    for i in range(100):
+        arr = get_data()
+        arr2 = arr.copy()
+        select_sort(arr)
+        select_sort2(arr2)
+    print(success)
