@@ -7,6 +7,6 @@ def index(request):
 
     context = {
             "all_articles" : all_articles}
-    return render(request, 'blog_index.html', context)
+    return render(request, 'blog/index.html', context)
 
 
