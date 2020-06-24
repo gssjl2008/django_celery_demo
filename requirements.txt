@@ -3,7 +3,7 @@ anyjson==0.3.3
 asgiref==3.2.7
 billiard==3.3.0.23
 celery==3.1.26.post2
-Django==3.0.5
+Django==3.0.7
 django-celery==3.3.1
 django-supervisor==0.4.0
 flower==0.9.4
