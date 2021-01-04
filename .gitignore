@@ -1,4 +1,6 @@
 *.py[cod]
+*.iml
+*.xml
 *.log
 *.pid
 
